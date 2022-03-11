@@ -12,16 +12,42 @@ html, body, main {
 .bold {
     font-weight: 700;
 }
+
+/* LINKS */
 .link-dark {
     color: rgb(88, 88, 88);
 }
 
+/* TITLES */
 h1 {
     font-size: calc(2rem + 1.8vw);
     font-weight: 900;
     color: rgb(38, 38, 105);
 }
+.tag__text--1 {
+    color: rgb(38, 38, 105);
+    font-weight: 600;
+    font-size: small;
+}
+
+/* ICONS */
+.icon_box {
+    background-color: rgb(160, 231, 236);
+}
+.icon_box--special {
+    background-color: rgb(244, 255, 214);
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+.icon_box--special > i{
+    color: rgb(209, 212, 23);
+}
+
+
+
 .a100 {
+    /* TEMPORAL, IT DOESNT WORK FOR ANYTHING */
     height: 100px;
     width: 100%;
     background-color: black;
