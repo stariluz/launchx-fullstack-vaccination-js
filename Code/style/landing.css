@@ -1,10 +1,31 @@
-.main_view {
+.main {
     /* width: 100%; */
     padding: 0px;
     margin: 0px;
 }
 
-.main__image--img {
-    height: auto;
+.main__info {
+    padding: 1.5rem 0.25rem;
+}
+
+.main__image--container {
+    height: 100vh;
+    background-color: rgb(16, 103, 180);
+    background-image: url('./../images/nurse-2.jpg');
+    background-position: 50% calc(50% + 60px) ;
+    background-size: cover;
+}
+
+.main__image {
+    object-fit: cover;
+    height: 100%;
     width: 100%;
+}
+@media (min-width: 768px) { 
+    
+    .main__info {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
 }

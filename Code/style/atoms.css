@@ -1,8 +1,8 @@
 /* Logo */
 .logo__title {
+    font-size: calc(1rem + 0.8vw);
     color: rgb(61, 61, 192);
-    font-weight: 700;
-    font-size: larger;
+    font-weight: 900;
 }
 
 /* Buttons */
