@@ -23,7 +23,54 @@
     width: 100%;
 }
 
-/* < Medium devices breakpoint > */
+/* Vaccination form */
+.vaccination__form {
+    position: relative;
+
+    background-color: white;
+    box-shadow: rgba(0, 47, 255, 0.15) 0px 10px 25px -5px,
+    rgba(0, 47, 255, 0.08) 0px 3px 10px -5px;
+
+    border-radius: 10px;
+    padding: 2rem;
+}
+.vaccination__input-group {
+    width: 28%;
+    padding-right: 1em;
+    align-content: flex-end;
+}
+.vaccination__input-group:last-child {
+    width: 15%;
+    padding: 0;
+    margin: auto;
+}
+/* .vaccination__input-group:last-child button{
+    margin: 0;
+} */
+.vaccination__input-group h5{
+    color: #566d84;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.vaccination__input-group input,
+.vaccination__input-group select
+{
+    border: none;
+
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px -4px;
+    font-weight: 600;
+    color: rgb(40, 40, 114);
+}
+
+.vaccination__input-group input:hover,
+.vaccination__input-group input:focus,
+.vaccination__input-group select:hover,
+.vaccination__input-group select:focus {
+    box-shadow: rgb(40, 40, 114, 0.3) 0px 5px 5px -2px;
+}
+
+/* Medium devices breakpoint */
 @media (min-width: 768px) {
 
     .main__info {
@@ -33,7 +80,16 @@
     .main__image--container{
         background-position: 50% calc(50% + 4vw);
     }
-    
+    .vaccination__form {
+        width: calc(100vw - 8rem - 15px);
+    }
+}
+
+/* X - Large device breakpoint */
+@media (min-width: 992px) {
+    .vaccination__form {
+        width: 75vw;
+    }
 }
 
 /* X - Large device breakpoint
@@ -46,5 +102,4 @@
     .main__image--container{
         background-position: 50% calc(50% + 8vw);
     }
-
 }

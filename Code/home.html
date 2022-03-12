@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <button type="button" class="btn-hoax btn btn-primary mx-2">
+                <button type="button" class="btn btn-primary mx-2">
                     Desmitificador
                 </button>
             </li>
@@ -50,14 +50,14 @@
     </header>
     <section class="main container-fluid">
         <div class="row g-0">
-            <div class="main__info col-12 col-md-6 m-auto">
+            <section class="main__info col-12 col-md-6 m-auto">
                 <h1>
                     Derrotemos al Virus con la Vacuna
                 </h1>
                 <p>
                     ¡Detengamos esta pandemia eliminando al virus con la vacuna! No dejes que tu familia o tú se contagien
                 </p>
-                <div class="tag__text--1 d-flex align-items-center justify-content-evenly p-4 mb-4">
+                <div class="tag__text--1 d-flex align-items-center justify-content-evenly px-4 pb-4 mb-4">
                     <div class="d-flex justify-content-center align-items-center me-2">
                         <div class="icon_box special">
                             <i class="bi bi-shield-fill-check "></i>
@@ -76,13 +76,58 @@
                         <div class="icon_box">
                             <i class="bi bi-clock-fill"></i>
                         </div>
-                        Programa tus vacunas
+                        Agenda tu vacunación:   
                     </h5>
                 </div>
-            </div>
-            <div class="main__image--container col-12 col-md-6">
+                <div class="container-fluid vaccination__form">
+                    <form action="">
+                        <div class="d-flex justify-content-center align-items-end">
+                            <div class="vaccination__input-group">
+                                <h5 class="d-flex justify-content-start align-items-center">
+                                    <div class="icon_box">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    Municipio   
+                                </h5>
+                                <select class="form-select" name="vaccination_location" id="vaccination_location">
+                                    <option value="chihuahua" selected>Chihuahua</option>
+                                    <option value="juarez">Juarez</option>
+                                    <option value="delicias">Delicias</option>
+                                </select>
+                            </div>
+                            <div class="vaccination__input-group">
+                                <h5 class="d-flex justify-content-start align-items-center">
+                                    <div class="icon_box"><i class="bi bi-calendar-week-fill"></i>
+                                    </div>
+                                    Fecha   
+                                </h5>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="vaccination__input-group">
+                                <h5 class="d-flex justify-content-start align-items-center">
+                                    <div class="icon_box">
+                                        <i class="bi bi-droplet-fill"></i>
+                                    </div>
+                                    Tipo de vacuna   
+                                </h5>
+                                <select class="form-select" name="vaccination_location" id="vaccination_location">
+                                    <option value="pfizer" selected>Pfizer</option>
+                                    <option value="moderna">Moderna</option>
+                                    <option value="astrazeneca">AstraZeneca</option>
+                                </select>
+                            </div>
+                            <div class="vaccination__input-group d-grid">       
+                                <button type="button" class="btn btn-primary btn-block">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="main__image--container col-12 col-md-6">
                 <!-- <img class="main__image" src="./images/nurse-2.jpg" alt="2 - Imagen de enfermero con vacuna" > -->
-            </div>
+            </section>
         </div>
         <div class="a100"></div>
     </section>
