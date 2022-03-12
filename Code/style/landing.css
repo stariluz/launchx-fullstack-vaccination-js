@@ -10,10 +10,11 @@
 
 .main__image--container {
     height: 100vh;
-    background-color: rgb(16, 103, 180);
+    background-color: rgb(255, 255, 255);
     background-image: url('./../images/nurse-2.jpg');
-    background-position: 50% calc(50% + 60px) ;
+    background-position: center ;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main__image {
@@ -21,11 +22,29 @@
     height: 100%;
     width: 100%;
 }
-@media (min-width: 768px) { 
-    
+
+/* < Medium devices breakpoint > */
+@media (min-width: 768px) {
+
     .main__info {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    .main__image--container{
+        background-position: 50% calc(50% + 4vw);
+    }
     
+}
+
+/* X - Large device breakpoint
+@media (min-width: 1200px) {
+    
+} */
+
+/* XX - Large device breakpoint */
+@media (min-width: 1400px) {
+    .main__image--container{
+        background-position: 50% calc(50% + 8vw);
+    }
+
 }
