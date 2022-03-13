@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="justify-content-center justify-content-md-between ">
-        <a href="#" class="d-flex align-items-center col-auto mb-2 mb-md-0 me-1 text-dark text-decoration-none mx-2">
+        <a href="#" class="d-flex align-items-center col-auto mb-2 mb-md-0 text-dark text-decoration-none mx-2">
             <!-- <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-vaccine-science-justicon-flat-justicon-1.png" width="40" height="32"/> -->
             <h1 class="logo__title">Vacunación</h1>
         </a>
@@ -48,40 +48,41 @@
             </li>
         </ul>
     </header>
-    <section class="main container-fluid">
+    <section class="main container-fluid" id="main_view">
         <div class="row g-0">
-            <section class="main__info col-12 col-md-6 m-auto">
-                <h1>
-                    Derrotemos al Virus con la Vacuna
-                </h1>
-                <p>
-                    ¡Detengamos esta pandemia eliminando al virus con la vacuna! No dejes que tu familia o tú se contagien
-                </p>
-                <div class="tag__text--1 d-flex align-items-center justify-content-evenly px-4 pb-4 mb-4">
-                    <div class="d-flex justify-content-center align-items-center me-2">
-                        <div class="icon_box special">
-                            <i class="bi bi-shield-fill-check "></i>
+            <section class="main__container col-12 col-md-6">
+                <div class="main__info">
+                    <h1>
+                        Derrotemos al Virus con la Vacuna
+                    </h1>
+                    <p class="important">
+                        ¡Detengamos esta pandemia eliminando al virus con la vacuna! No dejes que tu familia o tú se contagien
+                    </p>
+                    <div class="tag__text--1 d-flex align-items-center justify-content-evenly px-4 mt-4">
+                        <div class="d-flex justify-content-center align-items-center me-2">
+                            <div class="icon_box special">
+                                <i class="bi bi-shield-fill-check "></i>
+                            </div>
+                            La mejor protección
                         </div>
-                        La mejor protección
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center ms-2">
-                        <div class="icon_box special">
-                            <i class="bi bi-star-fill"></i>
+                        <div class="d-flex justify-content-center align-items-center ms-2">
+                            <div class="icon_box special">
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            Vacunas selectas
                         </div>
-                        Vacunas selectas
                     </div>
                 </div>
-                <div class="">
+                
+                <div class="vaccination__container">
                     <h5 class="d-flex justify-content-start align-items-center">
                         <div class="icon_box">
                             <i class="bi bi-clock-fill"></i>
                         </div>
                         Agenda tu vacunación:   
                     </h5>
-                </div>
-                <div class="container-fluid vaccination__form">
-                    <form action="">
-                        <div class="d-flex justify-content-center align-items-end">
+                    <form action="" class="vaccination__form container-fluid">
+                        <div class="">
                             <div class="vaccination__input-group">
                                 <h5 class="d-flex justify-content-start align-items-center">
                                     <div class="icon_box">
@@ -129,7 +130,78 @@
                 <!-- <img class="main__image" src="./images/nurse-2.jpg" alt="2 - Imagen de enfermero con vacuna" > -->
             </section>
         </div>
-        <div class="a100"></div>
+    </section>
+    <section class="vaccines_logos container-fluid" id="vaccines_logos">
+        <img class="img-fluid" src="./images/logo_astrazeneca.png" alt="Logo AstraZeneca">
+        <img class="img-fluid" src="./images/logo_sinovac.png" alt="Logo Sinovac">
+        <img class="img-fluid" src="./images/logo_pfizer.png" alt="Logo Pfizer">
+        <img class="img-fluid" src="./images/logo_moderna.png" alt="Logo Moderna">
+    </section>
+    <section class="container"  id="vaccination_beneficts">
+        <div class="row g-0 mb-4">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
+                <h2>
+                    ¿Por que debería vacunarme?
+                </h2>
+                <p class="important">
+                    Con el proposito de resolver tus dudas acerca de la vacuna para el COVID-19, te mencionamos los siguientes 4 beneficios de vacunarse:
+                </p>
+            </div>
+        </div>
+        <section class="vaccine_info__beneficts row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <section class="col">
+                <div>
+                    <h5 class="d-grid g-2">
+                        <div class="icon_box big mb-3">
+                            <i class="bi bi-arrows-angle-contract"></i>
+                        </div>
+                        Disminuir la propagación   
+                    </h5>
+                    <p>
+                        Se ha demostrado la efectividad de las vacunas para prevenir que las personas se contagien de coronavirus.
+                    </p>
+                </div>
+            </section>
+            <section class="col">
+                <div>
+                    <h5 class="d-grid g-2">
+                        <div class="icon_box big mb-3">
+                            <i class="bi bi-shield-fill-plus"></i>
+                        </div>
+                        Formar anticuerpos 
+                    </h5>
+                    <p>
+                        La vacuna del COVID-19 ayuda al sistema inmunitario a formar anticuerpos de repuesta.
+                    </p>
+                </div>
+            </section>
+            <section class="col">
+                <div>
+                    <h5 class="d-grid g-2">
+                        <div class="icon_box big mb-3">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        Proteger a los demás   
+                    </h5>
+                    <p>
+                        Además del beneficio individual de vacunarse contra el COVID-19, el vacunarnos implica proteger a las personas que nos rodean cada día.
+                    </p>
+                </div>
+            </section>
+            <section class="col">
+                <div>
+                    <h5 class="d-grid g-2">
+                        <div class="icon_box big mb-3">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+                        Crear inmunidad de grupo 
+                    </h5>
+                    <p>
+                        Otro aspecto positivo de vacunarse, es que podemos formar la inmunidad de grupo, neutralizando la transmisión del virus.
+                    </p>
+                </div>
+            </section>
+        </section>
     </section>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

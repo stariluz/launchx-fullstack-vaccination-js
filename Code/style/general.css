@@ -21,63 +21,26 @@ html, body, main {
 p {
     color: #566d84;
 }
+p.important{
+    font-size: 1.1rem;
+}
 
-h1, h5, .tag__text--1 {
+h1, h2, h5, .tag__text--1 {
     color: rgb(40, 40, 114);
 }
-
-h1 {
-    font-size: calc(2rem + 1.8vw);
+h1,h2 {
     font-weight: 900;
 }
+h1 {
+    font-size: calc(2rem + 1.8vw);
+}
 h5 {
-    font-size: 1rem;
+    font-size: large;
     font-weight: 600;
 }
 .tag__text--1 {
     font-weight: 600;
     font-size: small;
-}
-
-/* ICONS */
-.icon_box {
-    background-color: rgb(225, 243, 255);
-    border-radius: 5px;
-    margin-right: 0.5rem;
-    /* padding: 3px 7px; */
-
-    font-size: small;
-    width: 25px;
-    height: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon_box.big {
-    font-size: x-large;
-    width: 40px;
-    height: 40px;
-}
-.icon_box:hover {
-    box-shadow: inset -1px -1px 3px 2px rgba(0, 47, 255, 0.1),
-    rgba(255, 255, 255, 1) 0px 3px 2px -1px,
-    rgb(199, 225, 241) 0px 5px 3px -2px;
-}
-.icon_box > i {
-    color: rgb(61, 61, 192);
-}
-
-.icon_box.special {
-    background-color: rgb(244, 255, 214);
-}
-.icon_box.special:hover {
-    box-shadow: inset -1px -1px 3px 2px rgba(0, 0, 0, 0.1),
-    rgba(255, 255, 255, 1) 0px 3px 2px -1px,
-    rgb(224, 236, 189) 0px 5px 3px -2px;
-}
-.icon_box.special > i {
-    color: rgb(201, 187, 0);
 }
 
 .a100 {
