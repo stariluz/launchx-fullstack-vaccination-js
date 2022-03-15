@@ -91,7 +91,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-end;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
 .vaccines_logos img{
@@ -189,6 +189,9 @@
         width: 15%;
         padding: 0;
         margin: auto;
+    }
+    .vaccines_logos {
+        margin-top: 40px;
     }
     .vaccines_logos img:nth-child(3){
         /* Pfizer logo */
