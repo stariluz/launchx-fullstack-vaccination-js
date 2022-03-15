@@ -87,12 +87,12 @@
 /* VACCINES LOGOS SECTION */
 .vaccines_logos {
     position: relative;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-end;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .vaccines_logos img{
     position: relative;
@@ -111,12 +111,10 @@
 .vaccines_logos img:nth-child(3){
     /* Pfizer logo */
     height: 72px;
-    top: 17px;
 }
 .vaccines_logos img:nth-child(4){
     /* Moderna logo */
     height: 44px;
-    top: 10px;
 }
 
 /* Vaccine Information Section */
@@ -134,9 +132,21 @@
     box-shadow: rgb(168, 221, 252) 0px 3px 20px -2px;
 }
 
-/* Small devices breakpoint */
-@media (min-width: 576px) {
+/* SPECIAL BREAKPOINT FOR LOGOS */
+@media (min-width: 453px) {
+    .vaccines_logos img:nth-child(2){
+        /* Sinovac logo */
+        top: -17px;
+    }
 }
+/* SPECIAL BREAKPOINT FOR LOGOS */
+@media (min-width: 560px) {
+    .vaccines_logos img:nth-child(2){
+        /* Sinovac logo */
+        top: unset;
+    }
+}
+
 /* Medium devices breakpoint */
 @media (min-width: 768px) {
     .main {
@@ -179,6 +189,14 @@
         width: 15%;
         padding: 0;
         margin: auto;
+    }
+    .vaccines_logos img:nth-child(3){
+        /* Pfizer logo */
+        top: 17px;
+    }
+    .vaccines_logos img:nth-child(4){
+        /* Moderna logo */
+        top: 10px;
     }
 }
 
