@@ -3,6 +3,7 @@
     /* width: 100%; */
     padding: 0px;
     margin: 0px;
+    margin-bottom: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
     position: relative;
     height: 100vh;
 }
@@ -15,9 +16,7 @@
 .main__info {
     position: relative;
     top: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
-    /* top: calc( (1.5rem * 2) + (0.6rem * 2) + 4rem); */
-    /* background-color: rgba(255, 255, 255, 0.753); */
-    /* border-radius: 10px; */
+    padding-bottom: 2rem;
 }
 .main__image--container {
     position: absolute;
@@ -37,8 +36,8 @@
 
 /* Vaccination form */
 .vaccination__container {
-    position: absolute;
-    bottom: 1.5rem;
+    position: relative;
+    top: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
 }
 .vaccination__form {
     position: relative;
@@ -53,21 +52,16 @@
 }
 .vaccination__form>div{
     /* Form container */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
 }
 .vaccination__input-group {
-    width: 28%;
-    padding-right: 1em;
-    align-content: flex-end;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
-.vaccination__input-group:last-child {
-    /* Submit button */
-    width: 15%;
-    padding: 0;
-    margin: auto;
+.vaccination__input-group:last-child{
+    margin-bottom: 0rem;
 }
 .vaccination__input-group h5{
     color: #566d84;
@@ -140,8 +134,14 @@
     box-shadow: rgb(168, 221, 252) 0px 3px 20px -2px;
 }
 
+/* Small devices breakpoint */
+@media (min-width: 576px) {
+}
 /* Medium devices breakpoint */
 @media (min-width: 768px) {
+    .main {
+        margin: 0px;
+    }
     .main__container{
         padding-left: 4rem;
         padding-right: 4rem;
@@ -153,8 +153,32 @@
         position: relative;
         background-position: 50% calc(50% + 4vw);
     }
+    .vaccination__container {
+        top: unset;
+        position: absolute;
+        bottom: 1.5rem;
+    }
     .vaccination__form {
         width: calc(100vw - 8rem - 15px);
+    }
+    .vaccination__form>div{
+        /* Form container */
+        display: flex;
+        flex-direction: unset;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    .vaccination__input-group {
+        width: 28%;
+        padding-right: 1em;
+        align-content: flex-end;
+    }
+    .vaccination__input-group:last-child {
+        /* Submit button */
+        width: 15%;
+        padding: 0;
+        margin: auto;
     }
 }
 
