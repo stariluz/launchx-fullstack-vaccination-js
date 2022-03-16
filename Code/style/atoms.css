@@ -74,11 +74,11 @@
 }
 
 .icon_box.special {
-    background-color: var(--secondary-color);
+    background-color: var(--special-background);
 }
 .icon_box.special:hover {
-    box-shadow: var(--box-shadow-2);
+    box-shadow: var(--box-shadow-3);
 }
 .icon_box.special > i {
-    color: rgb(201, 187, 0);
+    color: var(--special-color)
 }

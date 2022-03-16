@@ -4,7 +4,8 @@
     --principal-color: rgb(40, 40, 114);
     --principal-text-color: rgb(86, 109, 132);
     --secondary-color: rgb(225, 243, 255);
-    --special-color: rgb(244, 255, 214);
+    --special-color: rgb(201, 187, 0);
+    --special-background: rgb(244, 255, 214);
     --title-color: rgb(61, 61, 192);
 
 
@@ -18,14 +19,14 @@
     --box-shadow-1: rgba(0, 26, 255, 0.12) 0px -5px 20px, rgba(0, 26, 255, 0.1) 0px 10px 6px -5px, rgba(0, 26, 255, 0.17) 0px 5px 13px -5px, rgba(10, 37, 64, 0.1) 0px -2px 6px 0px inset;
     --box-shadow-2: /* inset -1px -1px 3px 2px rgba(40, 40, 114, 0.1), */
     rgba(255, 255, 255, 1) 0px 0px 0px 2px,
-    rgba(199, 235, 255, 0.8) 0px 12px 20px -4px;
+    rgb(182, 229, 255) 0px 12px 20px -4px;
     --box-shadow-3: /*inset -1px -1px 3px 2px rgba(0, 0, 0, 0.1), */
     rgba(255, 255, 255, 1) 0px 0px 0px 2px,
-    rgb(224, 236, 189, 0.8) 0px 12px 20px -4px;
+    rgb(224, 236, 189, 1) 0px 12px 20px -4px;
 }
 
 * {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Lato', sans-serif;
 }
 html, body, main {
     width: 100%;
