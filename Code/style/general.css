@@ -1,4 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --principal-background: white;
+    --principal-color: rgb(40, 40, 114);
+    --principal-text-color: rgb(86, 109, 132);
+    --secondary-color: rgb(225, 243, 255);
+    --special-color: rgb(244, 255, 214);
+    --title-color: rgb(61, 61, 192);
+
+
+    --main-button-color: rgb(62,79,255);
+    --main-button-gradient: 90deg, rgba(62,79,255,1) 0%, rgba(43,48,179,1) 100%;
+    --second-button-color: rgb(83,116,255);
+    --second-button-gradient: 90deg, rgba(83,116,255,1) 0%, rgba(67,72,198,1) 100%;
+    --third-button-color: rgb(178,193,255);
+    --third-button-gradient: 90deg, rgba(178,193,255,1) 0%, rgba(83,114,233,1) 100%;
+
+    --box-shadow-1: rgba(0, 26, 255, 0.12) 0px -5px 20px, rgba(0, 26, 255, 0.1) 0px 10px 6px -5px, rgba(0, 26, 255, 0.17) 0px 5px 13px -5px, rgba(10, 37, 64, 0.1) 0px -2px 6px 0px inset;
+    --box-shadow-2: /* inset -1px -1px 3px 2px rgba(40, 40, 114, 0.1), */
+    rgba(255, 255, 255, 1) 0px 0px 0px 2px,
+    rgba(199, 235, 255, 0.8) 0px 12px 20px -4px;
+    --box-shadow-3: /*inset -1px -1px 3px 2px rgba(0, 0, 0, 0.1), */
+    rgba(255, 255, 255, 1) 0px 0px 0px 2px,
+    rgb(224, 236, 189, 0.8) 0px 12px 20px -4px;
+}
+
 * {
     font-family: 'Lato', sans-serif !important;
 }
@@ -19,14 +44,14 @@ html, body, main {
     font-weight: 700;
 }
 p {
-    color: #566d84;
+    color: var(--principal-text-color)
 }
 p.important{
     font-size: 1.1rem;
 }
 
 h1, h2, h5, .tag__text--1 {
-    color: rgb(40, 40, 114);
+    color: var(--principal-color);
 }
 h1,h2 {
     font-weight: 900;
@@ -43,9 +68,7 @@ h5 {
     font-size: small;
 }
 
-.a100 {
-    /* TEMPORAL, IT DOESNT WORK FOR ANYTHING */
-    height: 100px;
-    width: 100%;
-    background-color: black;
+/* Extra Classes */
+.main-gap {
+    margin-bottom: 60px;
 }

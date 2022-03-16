@@ -23,8 +23,10 @@
     z-index: -1;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    background-image: url('./../images/nurse-2.jpg');
-    background-position: 50% calc(50% + 22vw);
+    /* background-image: url('./../images/nurse-2.jpg'); */
+    /* background-position: 50% calc(50% + 22vw); */
+    background-image: url('./../images/vaccination-2.jpg');
+    background-position: 50% calc(50% + 10vw);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -92,7 +94,6 @@
     justify-content: space-evenly;
     align-items: flex-end;
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 .vaccines_logos img{
     position: relative;
@@ -118,9 +119,7 @@
 }
 
 /* Vaccine Information Section */
-.vaccine_info__beneficts {
-    padding-bottom: 100px;
-}
+
 .vaccine_info__beneficts>section>div{
     padding: 1.2rem;
     height: 100%;
@@ -131,6 +130,63 @@
 .vaccine_info__beneficts>section>div:hover{
     box-shadow: rgb(168, 221, 252) 0px 3px 20px -2px;
 }
+
+
+/* Vaccine preparations accordion */
+.preparations__container {
+    padding: 1.5rem 1rem;
+}
+.preparations__image--container {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./../images/vaccination-1.jpg');
+    background-position: calc(50% + 0vw) 50%;
+    /* background-position: center; */
+    height: 60vh;
+    /* min-height: 80vh;
+    max-height: 80vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.accordion-item {
+    border: none;
+    box-shadow: 0px 2px 5px -5px #566d84;
+    margin-bottom: 1rem;
+}
+.accordion-button {
+    box-shadow: rgb(255 255 255) 0px 0px 5px -2px, rgb(182 219 241) 0px 0px 6px -2px;
+    color: rgb(40, 40, 114);
+    font-weight: 600;
+}
+.accordion-button:hover{
+    box-shadow: rgb(168, 221, 252) 0px 3px 20px -2px;
+}
+.accordion-button:focus {
+    box-shadow: rgb(168, 221, 252) 0px 3px 20px -2px;
+}
+.accordion-button::after {
+    background-color: rgb(225, 243, 255);
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="%23566d84" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') !important;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: rgb(40, 40, 114);
+    box-shadow: rgb(152, 236, 187) 0px 3px 20px 0px;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="%233d3dc0" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') !important;
+    /* background-color: rgb(196, 229, 250); */
+    box-shadow: inset 1px 1px 3px 2px rgba(0, 47, 255, 0.05);
+}
+.accordion-button:not(.collapsed) .icon_box {
+    /* background-color: rgb(196, 229, 250); */
+    box-shadow: inset -1px -1px 3px 2px rgba(0, 47, 255, 0.05);
+}
+
 
 /* SPECIAL BREAKPOINT FOR LOGOS */
 @media (min-width: 453px) {
@@ -152,7 +208,8 @@
     .main {
         margin: 0px;
     }
-    .main__container{
+    .main__container,
+    .preparations__container {
         padding-left: 4rem;
         padding-right: 4rem;
     }
@@ -201,6 +258,10 @@
         /* Moderna logo */
         top: 10px;
     }
+    .preparations__image--container {
+        height: 80vh;
+        background-position: calc(50% + 5vw) 50%;
+    }
 }
 
 /* Large device breakpoint */
@@ -216,6 +277,6 @@
 /* XX - Large device breakpoint */
 @media (min-width: 1400px) {
     .main__image--container{
-        background-position: 50% calc(50% + 8vw);
+        /* background-position: 50% calc(50% + 8vw); */
     }
 }
