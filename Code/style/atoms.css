@@ -7,7 +7,8 @@
 }
 
 /* Buttons */
-.btn-primary {
+.btn-primary,
+.targets-container>section>div:hover .btn-primary {
     padding: 0.6rem 1.2rem;
     box-shadow: var(--box-shadow-1);
     border: none;
@@ -15,19 +16,23 @@
     background: -moz-linear-gradient(var(--main-button-gradient));
     background: -webkit-linear-gradient(var(--main-button-gradient));
     background: linear-gradient(var(--main-button-gradient));
+    color: white;
 }
-.btn-primary:hover{
+.btn-primary:hover,
+.targets-container>section>div .btn-primary:hover {
     border: none;
     background: var(--second-button-color);
     background: -moz-linear-gradient(var(--second-button-gradient));
     background: -webkit-linear-gradient(var(--second-button-gradient));
     background: linear-gradient(var(--second-button-gradient));
 }
-.btn-primary:focus{
+.btn-primary:focus,
+.targets-container>section>div .btn-primary:focus {
     box-shadow: rgba(0, 26, 255, 0.22) 0px -5px 10px, rgba(0, 26, 255, 0.22) 0px 10px 6px -5px, rgba(0, 26, 255, 0.27) 0px 5px 10px -5px, rgba(10, 37, 64, 0.5) 0px -2px 6px 0px inset !important;
     border: none;
 }
-.btn-primary:active{
+.btn-primary:active,
+.targets-container>section>div .btn-primary:active {
     background: var(--third-button-color);
     background: -moz-linear-gradient(var(--third-button-gradient));
     background: -webkit-linear-gradient(var(--third-button-gradient));
@@ -35,11 +40,22 @@
     border: none;
 }
 
+.targets-container .btn-primary{
+    box-shadow: none;
+    font-weight: 600;
+    background: var(--main-disable-button-color);
+    color: var(--title-color);
+}
+.targets-container>section>div .btn-primary:focus {
+    background: var(--main-button-color);
+    color: white;
+}
+
 /* ICONS */
 .icon_box {
     background-color: var(--secondary-color);
     border-radius: 5px;
-    margin-right: 0.5rem;
+    margin-right: 0.6rem;
     /* padding: 3px 7px; */
 
     font-size: small;
@@ -60,13 +76,16 @@
     max-height: 10px;
 }
 .icon_box.big {
+    margin-right: 0.8rem;
     font-size: x-large;
-    min-width: 40px;
-    min-height: 40px;
-    max-width: 40px;
-    max-height: 40px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
 }
-.icon_box:hover {
+.icon_box:hover,
+.targets-container>section>div:hover .icon_box,
+.accordion-button:hover .icon_box{
     box-shadow: var(--box-shadow-2);
 }
 .icon_box > i {
@@ -76,7 +95,7 @@
 .icon_box.special {
     background-color: var(--special-background);
 }
-.icon_box.special:hover {
+.icon_box.special:hover{
     box-shadow: var(--box-shadow-3);
 }
 .icon_box.special > i {

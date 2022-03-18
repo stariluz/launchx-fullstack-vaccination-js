@@ -16,6 +16,16 @@ header {
     box-shadow: 0px 3px 15px -15px rgb(85, 85, 85);
 }
 
+.targets-container>section>div{
+    padding: 1.2rem;
+    height: 100%;
+    box-shadow:rgba(176, 210, 248, 0.7) 0px 0px 10px -5px;
+    border-radius: 10px;
+}
+.targets-container>section>div:hover{
+    box-shadow: rgba(176, 210, 248, 0.5) 0px 30px 30px -10px;
+}
+
 
 @media (min-width: 992px) {
     

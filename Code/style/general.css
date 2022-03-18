@@ -10,8 +10,9 @@
 
 
     --main-button-color: rgb(62,79,255);
+    --main-disable-button-color: var(--secondary-color);
     --main-button-gradient: 90deg, rgba(62,79,255,1) 0%, rgba(43,48,179,1) 100%;
-    --second-button-color: rgb(83,116,255);
+    --mainecond-button-color: rgb(83,116,255);
     --second-button-gradient: 90deg, rgba(83,116,255,1) 0%, rgba(67,72,198,1) 100%;
     --third-button-color: rgb(178,193,255);
     --third-button-gradient: 90deg, rgba(178,193,255,1) 0%, rgba(83,114,233,1) 100%;
@@ -50,6 +51,11 @@ p {
 p.important{
     font-size: 1.1rem;
 }
+p.subhead{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;;
+}
 
 h1, h2, h5, .tag__text--1 {
     color: var(--principal-color);
@@ -71,5 +77,5 @@ h5 {
 
 /* Extra Classes */
 .main-gap {
-    margin-bottom: 60px;
+    margin-bottom: 7rem;
 }
