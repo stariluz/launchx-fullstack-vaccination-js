@@ -22,7 +22,7 @@
     z-index: -1;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    /* background-image: url('./../images/nurse-1.jpg'); */
+    background-image: url('./../images/nurse-1.jpg');
 }
 
 /* Vaccination form */
