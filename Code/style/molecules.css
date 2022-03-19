@@ -26,6 +26,29 @@ header {
     box-shadow: rgba(176, 210, 248, 0.5) 0px 30px 30px -10px;
 }
 
+footer {
+    background-color: var(--secondary-color);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+footer h5{
+    font-weight: 800;
+}
+footer ul,
+footer p{
+    margin-top: 1rem;
+    padding: 0px;
+}
+footer li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+footer a{
+    color: var(--principal-text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
 
 @media (min-width: 992px) {
     

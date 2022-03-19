@@ -2,7 +2,7 @@
 .main {
     padding: 0px;
     margin: 0px;
-    margin-bottom: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 4rem);
+    margin-bottom: calc( (1.5rem * 2) + (0.6rem * 2)*3 + 2rem);
     position: relative;
     height: 100vh;
 }
@@ -22,18 +22,7 @@
     z-index: -1;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    /* background-image: url('./../images/nurse-2.jpg'); */
-    /* background-position: 50% calc(50% + 22vw); */
-    background-image: url('./../images/nurse-1.jpg');
-    background-position: center;
-    /* background-position: 50% calc(50% + 10vw); */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main__image {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+    /* background-image: url('./../images/nurse-1.jpg'); */
 }
 
 /* Vaccination form */
@@ -125,15 +114,9 @@
 .info-container {
     padding: 1.5rem 1rem;
 }
-.preparations__image--container {
-    background-color: rgb(255, 255, 255);
+/* .preparations.image--container {
     background-image: url('./../images/vaccination-1.jpg');
-    background-position: center;
-    background-size: cover;
-    /* background-position: top;
-    background-size: auto 70vh; */
-    background-repeat: no-repeat;
-}
+} */
 .accordion-item {
     border: none;
     margin-bottom: 1rem;
@@ -181,19 +164,15 @@
 }
 
 /* Emergency contact section */
-.contact_image--container {
-    background-color: rgb(255, 255, 255);
+/* .contact.image--container {
     background-image: url('./../images/contact-1.jpg');
-    background-position: center;
-    /* height: 80vh; */
-    /* min-height: 80vh;
-    max-height: 80vh; */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+} */
 
 /* SPECIAL BREAKPOINT FOR LOGOS */
 @media (min-width: 453px) {
+    .main {
+        margin-bottom: 0px;
+    }
     .vaccines_logos img:nth-child(2){
         /* Sinovac logo */
         top: -17px;
@@ -209,9 +188,6 @@
 
 /* Medium devices breakpoint */
 @media (min-width: 768px) {
-    .main {
-        margin-bottom: 0px;
-    }
     .main__container,
     .info-container {
         padding-left: 4rem;
@@ -276,7 +252,5 @@
 
 /* XX - Large device breakpoint */
 @media (min-width: 1400px) {
-    /* .main__image--container{
-        background-position: 50% calc(50% + 8vw); 
-    } */
+    
 }

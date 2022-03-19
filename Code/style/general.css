@@ -45,16 +45,21 @@ html, body, main {
 .bold {
     font-weight: 700;
 }
-p {
+p, li {
     color: var(--principal-text-color)
 }
 p.important{
     font-size: 1.1rem;
 }
+p.subhead,
+.subhead p,
+.subhead li,
+.subhead a{
+    font-size: 0.9rem;;
+}
 p.subhead{
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    font-size: 0.8rem;;
 }
 
 h1, h2, h5, .tag__text--1 {
@@ -74,8 +79,47 @@ h5 {
     font-weight: 600;
     font-size: small;
 }
+.credits a{
+    font-weight: 400;
+}
 
 /* Extra Classes */
 .main-gap {
     margin-bottom: 7rem;
+}
+.image--container{
+    position: relative;
+    height: auto;
+    background: rgb(22,155,240);
+    background: -moz-linear-gradient(139deg, rgba(22,155,240,1) 0%, rgba(25,109,238,1) 100%);
+    background: -webkit-linear-gradient(139deg, rgba(22,155,240,1) 0%, rgba(25,109,238,1) 100%);
+    background: linear-gradient(139deg, rgba(22,155,240,1) 0%, rgba(25,109,238,1) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-image {
+    object-fit: cover;
+    position: relative;
+    transform: translate(0%, 0%);
+    top: 0%;
+    left: 0%;
+}
+
+/* Large device breakpoint */
+@media (min-width: 992px) {
+    
+    /* .image--container{
+        position: relative;
+        height: auto;
+    } */
+    .main-image {
+        object-fit: cover;
+        height: 65vh;
+        position: absolute;
+        transform: translate(0%, -100%);
+        top: 100%;
+        left: 0%;
+    }
 }
